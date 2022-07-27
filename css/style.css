@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+    background: #193549;
+    color: white;
+    font-family: 'helvetica neue', sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+}
+
+:root {
+    --clr-bg: #ffc600;
+    --wd-border: 30px;
+}
+
+.controls {
+    margin-bottom: 50px;
+}
+
+input {
+    width: 100px;
+}
+
+img {
+    width: calc(100%/2);
+    transition: all 0.5s ease-in-out;
+    border: var(--wd-border) solid var(--clr-bg);
+}
