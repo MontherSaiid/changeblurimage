@@ -10,6 +10,8 @@ body {
 :root {
     --clr-bg: #ffc600;
     --wd-border: 30px;
+    --img-blur: 0px;
+    --wd-image: 0px;
 }
 
 .controls {
@@ -24,4 +26,6 @@ img {
     width: calc(100%/2);
     transition: all 0.5s ease-in-out;
     border: var(--wd-border) solid var(--clr-bg);
+    filter: blur(var(--img-blur));
+    width: var(--wd-image);
 }
