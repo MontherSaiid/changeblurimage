@@ -5,12 +5,14 @@ let bgColor = document.getElementById("base");
 let image = document.getElementById("image");
 let rootEle = document.querySelector(":root");
 
+console.log(getComputedStyle(rootEle).getPropertyValue("--img-blur"));
+
 // change the width of image
 spacing.addEventListener("change", function () {
     // image.style.width = (spacing.value * 5) + "px";
     rootEle.style.setProperty("--wd-image", (spacing.value * 5) + "px");
-
 });
+
 
 // change the blur of image
 blur.addEventListener("change", function () {
